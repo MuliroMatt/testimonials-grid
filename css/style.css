@@ -1,3 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
 
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.testimonials {
+  width: 87vw;
+  max-width: 500px;
+  margin: 4.5rem auto;
+  display: grid;
+  gap: 24px;
+}
+.testimonials .testimonials__card {
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  padding: 24px 32px;
+}
+.testimonials .testimonials__card .testimonials__card__user {
+  display: flex;
+  gap: 1rem;
+  margin: 0 0 1rem;
+}
+.testimonials .testimonials__card .testimonials__card__user .testimonials__card__user__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.testimonials .testimonials__card .testimonials__card__user .testimonials__card__user__img img {
+  width: 100%;
+}
+.testimonials .testimonials__card .testimonials__card__user .testimonials__card__user__infos {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .testimonials__card .testimonials__card__user .testimonials__card__user__infos .testimonials__card__user__infos__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.testimonials .testimonials__card .testimonials__card__user .testimonials__card__user__infos .testimonials__card__user__infos__verification {
+  font-size: 11px;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-weight: 500;
+}
+.testimonials .testimonials__card .testimonials__card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin: 0 0 1rem;
+  z-index: 999;
+}
+.testimonials .testimonials__card .testimonials__card__text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0.3px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.testimonials .testimonials__card--daniel {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% top;
+}
+.testimonials .testimonials__card--daniel .testimonials__card__user .testimonials__card__user__img {
+  border-color: hsla(0, 0%, 100%, 0.5);
+}
+.testimonials .testimonials__card--jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonials .testimonials__card--jeanette, .testimonials .testimonials__card--kira {
+  background-color: hsl(0, 0%, 100%);
+}
+.testimonials .testimonials__card--jeanette .testimonials__card__user .testimonials__card__user__img, .testimonials .testimonials__card--kira .testimonials__card__user .testimonials__card__user__img {
+  border-color: hsla(217, 19%, 35%, 0.5);
+}
+.testimonials .testimonials__card--jeanette .testimonials__card__user .testimonials__card__user__infos .testimonials__card__user__infos__name, .testimonials .testimonials__card--kira .testimonials__card__user .testimonials__card__user__infos .testimonials__card__user__infos__name {
+  color: hsl(217, 19%, 35%);
+}
+.testimonials .testimonials__card--jeanette .testimonials__card__user .testimonials__card__user__infos .testimonials__card__user__infos__verification, .testimonials .testimonials__card--kira .testimonials__card__user .testimonials__card__user__infos .testimonials__card__user__infos__verification {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+.testimonials .testimonials__card--jeanette .testimonials__card__title, .testimonials .testimonials__card--kira .testimonials__card__title {
+  color: hsl(217, 19%, 35%);
+}
+.testimonials .testimonials__card--jeanette .testimonials__card__text, .testimonials .testimonials__card--kira .testimonials__card__text {
+  color: hsla(217, 19%, 35%, 0.7);
+}
+.testimonials .testimonials__card--patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+@media screen and (min-width: 1150px) {
+  .testimonials {
+    width: auto;
+    max-width: none;
+    grid-template-columns: repeat(4, 250px);
+  }
+  .testimonials .testimonials__card--daniel {
+    grid-column: 1/3;
+  }
+  .testimonials .testimonials__card--kira {
+    grid-column: 4;
+    grid-row: 1/3;
+  }
+  .testimonials .testimonials__card--patrick {
+    grid-column: 2/4;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
